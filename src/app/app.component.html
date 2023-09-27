@@ -1,1 +1,14 @@
-<h1>Juan Leite Farias 🌹</h1>
+<p>{{titulo}}</p>
+
+<br>
+
+Nome: <input [(ngModel)]="usuario.nome"><br>
+CPF: <input [(ngModel)]="usuario.cpf"><br>
+Idade: <input [(ngModel)]="usuario.idade"><br>
+<button (click)="inserirUsuario()">Enviar</button>
+
+<br> {{aluno}}
+
+<ul>
+  <li *ngFor="let usuario of usuarios">{{usuario.nome}}</li>
+</ul>
